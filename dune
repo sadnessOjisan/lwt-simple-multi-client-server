@@ -1,0 +1,8 @@
+(executable
+ (name main)
+ (libraries lwt lwt.unix logs))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -a))))
