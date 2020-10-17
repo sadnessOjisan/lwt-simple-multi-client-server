@@ -40,7 +40,7 @@ let create_socket () =
   let open Lwt_unix in
   let sock = socket PF_INET SOCK_STREAM 0 in
   let sockaddr = ADDR_INET (listen_address, port) in
-  bind sock sockaddr;
+  let _ = bind sock sockaddr in
   listen sock backlog;
   sock
 

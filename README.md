@@ -1,2 +1,7 @@
 # lwt-simple-multi-client-server
-Lwtの公式にあるサーバー実装
+
+Lwt の公式にあるサーバー実装
+
+```
+dune exec ./main.exe
+```
